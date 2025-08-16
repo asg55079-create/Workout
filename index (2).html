@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorkoutZone</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: #222;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      z-index: 100;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .navbar a:hover { background: #555; }
+    .section { padding:20px; }
+    .title  { font-size:24px; font-weight:bold; text-align:center; margin-bottom:30px; }
+    .grid   { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+    .category {
+      padding:15px;
+      text-align:center;
+      border:1px solid #000;
+      border-radius:8px;
+      text-decoration:none;
+      color:#000;
+      font-size:16px;
+    }
+    .exercise {
+      padding:15px;
+      border:1px solid #000;
+      border-radius:8px;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- НАВИГАЦИЯ -->
+<div class="navbar">
+  <a href="#home">Главная</a>
+  <a href="#chest">Грудь</a>
+  <a href="#back">Спина</a>
+  <a href="#arms">Руки</a>
+  <a href="#abs">Пресс</a>
+  <a href="#cardio">Кардио</a>
+  <a href="#stretch">Растяжка</a>
+</div>
+
+<!-- ГЛАВНАЯ -->
+<div class="section" id="home">
+  <div class="title">WorkoutZone</div>
+  <div class="grid">
+    <a href="#chest" class="category">Грудь</a>
+    <a href="#back"  class="category">Спина</a>
+    <a href="#arms"  class="category">Руки</a>
+    <a href="#abs"   class="category">Пресс</a>
+    <a href="#cardio" class="category">Кардио</a>
+    <a href="#stretch" class="category">Растяжка</a>
+  </div>
+</div>
+
+<!-- СЕКЦИИ -->
+<div class="section" id="chest">
+  <div class="title">Грудь – Упражнения</div>
+  <div class="exercise">Жим лёжа (видео)</div>
+  <div class="exercise">Разводка гантелей лёжа (видео)</div>
+  <div class="exercise">Отжимания (видео)</div>
+</div>
+
+<div class="section" id="back">
+  <div class="title">Спина – Упражнения</div>
+  <div class="exercise">Тяга верхнего блока</div>
+  <div class="exercise">Тяга гантели в наклоне</div>
+  <div class="exercise">Подтягивания</div>
+</div>
+
+<div class="section" id="arms">
+  <div class="title">Руки – Упражнения</div>
+  <div class="exercise">Сгибания рук с гантелями</div>
+  <div class="exercise">Французский жим</div>
+  <div class="exercise">Отжимания узким хватом</div>
+</div>
+
+<div class="section" id="abs">
+  <div class="title">Пресс – Упражнения</div>
+  <div class="exercise">Скручивания</div>
+  <div class="exercise">Подъем ног в висе</div>
+  <div class="exercise">Планка</div>
+</div>
+
+<div class="section" id="cardio">
+  <div class="title">Кардио</div>
+  <div class="exercise">Бег на месте</div>
+  <div class="exercise">Скакалка</div>
+  <div class="exercise">Велотренажер</div>
+</div>
+
+<div class="section" id="stretch">
+  <div class="title">Растяжка</div>
+  <div class="exercise">Наклоны вперед</div>
+  <div class="exercise">Растяжка бедра</div>
+  <div class="exercise">Растяжка плеч</div>
+</div>
+
+</body>
+</html>
